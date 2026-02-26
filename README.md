@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECHUWA · dev & network engineer</title>
-    <!-- Fonts & Icons (subtle, clean) -->
+    <!-- Fonts & Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #0a0c10;
+            background-color: #0a0c10;  /* FIXED: was #8a0c10 (dark red) */
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             color: #e1e9f0;
             line-height: 1.5;
@@ -29,20 +29,20 @@
         .profile-card {
             max-width: 1280px;
             width: 100%;
-            background: rgba(10, 14, 23, 0.75);
+            background: rgba(10, 14, 23, 0.85);
             backdrop-filter: blur(2px);
             border-radius: 3rem 3rem 2rem 2rem;
-            box-shadow: 0 25px 50px -8px rgba(0, 212, 255, 0.08), 0 0 0 1px rgba(0, 212, 255, 0.1) inset;
+            box-shadow: 0 25px 50px -8px rgba(0, 212, 255, 0.15), 0 0 0 1px rgba(0, 212, 255, 0.1) inset;
             overflow: hidden;
             padding: 2rem 2rem 1rem 2rem;
         }
 
         /* smooth gradient borders / headings */
         h2 {
-            font-weight: 600;
+            font-weight: 700;
             font-size: 2rem;
             letter-spacing: -0.02em;
-            background: linear-gradient(130deg, #ffffff, #a0e9ff);
+            background: linear-gradient(130deg, #ffffff, #00d4ff, #a0e9ff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -58,18 +58,7 @@
             filter: drop-shadow(0 0 6px #00d4ff66);
         }
 
-        /* table clean */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        td {
-            vertical-align: top;
-            padding: 0.5rem;
-        }
-
-        /* badge style overhaul — clean glass */
+        /* badge style - clean glass */
         .info-badge {
             display: inline-flex;
             align-items: center;
@@ -82,10 +71,12 @@
             font-size: 0.95rem;
             font-weight: 500;
             color: #ccddee;
-            transition: 0.2s ease;
+            transition: all 0.3s ease;
             box-shadow: 0 4px 12px rgba(0,0,0,0.5);
             margin: 0.3rem 0.3rem 0.3rem 0;
             width: fit-content;
+            text-decoration: none;
+            cursor: pointer;
         }
 
         .info-badge i, .info-badge .emoji {
@@ -97,11 +88,17 @@
 
         .info-badge:hover {
             border-color: #00d4ff;
-            transform: translateY(-2px);
-            background: rgba(0, 212, 255, 0.05);
+            transform: translateY(-3px);
+            background: rgba(0, 212, 255, 0.1);
+            box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
         }
 
-        /* stats / skill bars analog */
+        /* clickable badges for social links */
+        .social-link {
+            text-decoration: none;
+        }
+
+        /* skill bars */
         .skill-bar-row {
             display: flex;
             align-items: center;
@@ -154,35 +151,85 @@
             color: #bfd9f0;
         }
 
-        /* repo cards soft */
+        /* repo cards */
         .repo-pin {
             background: #111b24;
             border-radius: 2rem;
             border: 1px solid #253545;
             transition: all 0.2s;
+            padding: 1.2rem;
+            width: 280px;
+            text-decoration: none;
+            color: inherit;
+            display: inline-block;
         }
         .repo-pin:hover {
             border-color: #00d4ff;
             background: #14222e;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 24px -8px #00d4ff40;
         }
 
-        /* section separation */
+        /* section divider */
         .section-divider {
             margin: 3rem 0 1.5rem;
             height: 2px;
             background: linear-gradient(90deg, transparent, #00d4ff40, #a0d4ff80, #00d4ff40, transparent);
         }
 
-        /* footer wave text */
-        .wave-footer {
-            font-size: 1.2rem;
+        /* header wave */
+        .wave-header {
+            width: 100%;
+            background: linear-gradient(115deg, #0d1117 0%, #0a3d62 30%, #1a6b8a 70%, #00d4ff 100%);
+            height: 200px;
+            border-radius: 0 0 130px 130px / 0 0 60px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 20px 35px -8px #00d4ff50;
+            margin-bottom: 1.5rem;
+        }
+
+        .typing-sim {
+            background: #0f1a24;
+            padding: 0.9rem 2rem;
+            border-radius: 60px;
+            border: 1px solid #00d4ff80;
+            box-shadow: 0 0 20px #00d4ff30;
+            font-family: 'Fira Code', monospace;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #b5f0ff;
+            display: inline-block;
+            margin: 0.5rem 0;
+        }
+
+        /* footer wave */
+        .footer-wave {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(90deg, #00d4ff, #1a6b8a, #0d1117);
+            border-radius: 80px 80px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.7rem;
             font-weight: 400;
-            text-shadow: 0 2px 5px #00d4ff30;
+            text-shadow: 0 2px 6px black;
+            margin-top: 2rem;
         }
 
         a {
             text-decoration: none;
             color: inherit;
+        }
+
+        /* profile views stat */
+        .stat-badge {
+            background: rgba(0, 212, 255, 0.1);
+            border: 1px solid #00d4ff40;
         }
     </style>
 </head>
@@ -191,31 +238,31 @@
 
     <!-- ========= HEADER ========= -->
     <div align="center">
-        <!-- wave header (capsule render simulated with gradient & text) -->
-        <div style="width:100%; background: linear-gradient(115deg, #0d1117 0%, #0a3d62 30%, #1a6b8a 70%, #00d4ff 100%); height: 200px; border-radius: 0 0 130px 130px / 0 0 60px 60px; display: flex; flex-direction: column; justify-content: center; align-items: center; box-shadow: 0 20px 35px -8px #00d4ff50; margin-bottom: 1.5rem;">
+        <!-- wave header -->
+        <div class="wave-header">
             <div style="font-size: 5.5rem; font-weight: 800; letter-spacing: 4px; color: white; text-shadow: 0 0 10px #00d4ff, 0 4px 15px #0a3d62; line-height: 1.2;">ECHUWA</div>
             <div style="font-size: 1.3rem; background: rgba(0,0,0,0.3); backdrop-filter: blur(4px); padding: 0.3rem 2rem; border-radius: 60px; color: #fff; font-weight: 500; border: 1px solid #ffffff40;">⚡ Full-Stack Developer | Network Engineer ⚡</div>
         </div>
 
-        <!-- typing svg placeholder (SVG look with typed effect simulation) -->
-        <a href="https://github.com/echuwa">
-            <div style="background: #0f1a24; padding: 0.9rem 2rem; border-radius: 60px; border: 1px solid #00d4ff80; box-shadow: 0 0 20px #00d4ff30; font-family: 'Fira Code', monospace; font-size: 1.4rem; font-weight: 600; color: #b5f0ff; display: inline-block; margin: 0.5rem 0;">
-                <span>🐘 PHP & Laravel Expert · ☕ Spring Boot · 💚 Vue.js · 🔌 Networks</span>
+        <!-- typing SVG simulation -->
+        <a href="https://github.com/echuwa" target="_blank">
+            <div class="typing-sim">
+                <span>🐘 PHP & Laravel · ☕ Spring Boot · 💚 Vue.js · 🔌 Networks</span>
             </div>
         </a>
         <br/>
 
-        <!-- badges row -->
+        <!-- badges row with fixed links -->
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; margin: 1.5rem 0 0.8rem;">
             <span class="info-badge"><i class="fas fa-map-pin"></i> 🌍 Tanzania</span>
             <span class="info-badge"><i class="fas fa-briefcase"></i> 💼 Open to Work</span>
             <span class="info-badge"><i class="fas fa-bolt"></i> ⚡ Code & Networks</span>
-            <span class="info-badge"><i class="fas fa-eye"></i> 👁️ Profile Views 1.4k</span>
-            <span class="info-badge"><i class="fas fa-users"></i> 👥 Followers 187</span>
+            <span class="info-badge stat-badge"><i class="fas fa-eye"></i> 👁️ Profile Views 1.4k</span>
+            <span class="info-badge stat-badge"><i class="fas fa-users"></i> 👥 Followers 187</span>
         </div>
     </div>
 
-    <!-- divider subtle -->
+    <!-- divider -->
     <div class="section-divider"></div>
 
     <!-- ========= WHO AM I ========= -->
@@ -239,7 +286,7 @@
         <div style="flex: 1 1 300px;">
             <h3 style="color: #b0f0ff; margin-bottom: 1rem; font-weight: 500;"><i class="fas fa-rocket" style="color:#00d4ff;"></i> Currently</h3>
             <div class="info-badge"><i class="fas fa-fire"></i> 🔥 Laravel & Vue.js Projects</div>
-            <div class="info-badge"><i class="fas fa-dharmachakra"></i> 📚 Docker 🐳</div>
+            <div class="info-badge"><i class="fab fa-docker"></i> 📚 Docker 🐳</div>
             <div class="info-badge"><i class="fas fa-dharmachakra"></i> 📚 Kubernetes ☸️</div>
             <div class="info-badge"><i class="fas fa-cloud"></i> 📚 AWS Cloud ☁️</div>
             <div class="info-badge"><i class="fas fa-arrows-rotate"></i> 📚 DevOps 🔄</div>
@@ -258,10 +305,10 @@
         <h2><i class="fas fa-tools"></i> Complete Tech Arsenal</h2>
     </div>
 
-    <!-- backend details open (using skill bars) -->
+    <!-- backend -->
     <details open style="margin-bottom: 2rem;">
-        <summary style="font-size: 1.5rem; font-weight: 600; color: #d0edff; cursor: pointer; list-style: none;"><span>🔷 Backend Development</span></summary>
-        <div style="margin-top: 1.2rem; display: flex; flex-wrap: wrap; gap: 2rem;">
+        <summary style="font-size: 1.5rem; font-weight: 600; color: #d0edff; cursor: pointer; list-style: none; margin-bottom: 1rem;"><span>🔷 Backend Development</span></summary>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
             <div style="flex: 2; min-width: 280px;">
                 <div class="skill-bar-row"><span class="skill-tag"><i class="fab fa-php" style="color:#777BB4;"></i> PHP</span> <div class="bar-bg"><div class="bar-fill" style="width:95%"></div></div><span style="margin-left:0.8rem;">95%</span></div>
                 <div class="skill-bar-row"><span class="skill-tag"><i class="fab fa-laravel" style="color:#FF2D20;"></i> Laravel</span> <div class="bar-bg"><div class="bar-fill" style="width:93%"></div></div><span>93%</span></div>
@@ -276,9 +323,10 @@
         </div>
     </details>
 
+    <!-- frontend -->
     <details open style="margin-bottom: 2rem;">
-        <summary style="font-size: 1.5rem; font-weight: 600; color: #d0edff;"><span>🔶 Frontend Development</span></summary>
-        <div style="margin-top: 1.2rem; display: flex; flex-wrap: wrap; gap: 2rem;">
+        <summary style="font-size: 1.5rem; font-weight: 600; color: #d0edff; margin-bottom: 1rem;"><span>🔶 Frontend Development</span></summary>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
             <div style="flex:2; min-width:280px;">
                 <div class="skill-bar-row"><span class="skill-tag"><i class="fab fa-js" style="color:#F7DF1E;"></i> JS</span> <div class="bar-bg"><div class="bar-fill" style="width:90%"></div></div><span>90%</span></div>
                 <div class="skill-bar-row"><span class="skill-tag"><i class="fab fa-vuejs" style="color:#4FC08D;"></i> Vue.js</span> <div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div><span>88%</span></div>
@@ -292,22 +340,23 @@
         </div>
     </details>
 
+    <!-- databases -->
     <details open style="margin-bottom: 2rem;">
-        <summary style="font-size: 1.5rem; font-weight: 600;"><span>🗄️ Databases</span></summary>
-        <div style="display: flex; flex-wrap: wrap; gap:2rem; margin-top:1rem;">
+        <summary style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;"><span>🗄️ Databases</span></summary>
+        <div style="display: flex; flex-wrap: wrap; gap:2rem;">
             <div style="flex:2;">
                 <div class="skill-bar-row"><span class="skill-tag"><i class="fas fa-database" style="color:#4479A1;"></i> MySQL</span> <div class="bar-bg"><div class="bar-fill" style="width:92%"></div></div><span>92%</span></div>
                 <div class="skill-bar-row"><span class="skill-tag"><i class="fas fa-leaf" style="color:#47A248;"></i> MongoDB</span> <div class="bar-bg"><div class="bar-fill" style="width:78%"></div></div><span>78%</span></div>
-                <div class="skill-bar-row"><span class="skill-tag"><i class="fas fa-database" style="color:#336791;"></i> PgAdmin4/PSQL</span> <div class="bar-bg"><div class="bar-fill" style="width:75%"></div></div><span>75%</span></div>
+                <div class="skill-bar-row"><span class="skill-tag"><i class="fas fa-database" style="color:#336791;"></i> PostgreSQL</span> <div class="bar-bg"><div class="bar-fill" style="width:75%"></div></div><span>75%</span></div>
             </div>
             <div style="flex:1; background:#0d1722; border-radius:28px; padding:1.2rem;">Stored procedures, aggregation, JSONB, indexing</div>
         </div>
     </details>
 
-    <!-- Network engineering (beautiful box) -->
+    <!-- Network engineering -->
     <details open>
-        <summary style="font-size: 1.5rem; font-weight: 600;"><span>🌐 Network Engineering</span></summary>
-        <div class="net-box" style="margin-top: 1rem;">
+        <summary style="font-size: 1.5rem; font-weight: 600; margin-bottom: 1rem;"><span>🌐 Network Engineering</span></summary>
+        <div class="net-box">
             <div class="net-line"><span class="net-cat">OSI Layer 2</span><span class="net-desc">VLANs • STP • EtherChannel • MAC Tables</span></div>
             <div class="net-line"><span class="net-cat">OSI Layer 3</span><span class="net-desc">OSPF • EIGRP • RIP • Static • BGP</span></div>
             <div class="net-line"><span class="net-cat">Security</span><span class="net-desc">Firewalls • ACLs • VPN • IPSec • NAT</span></div>
@@ -323,12 +372,16 @@
         </div>
     </details>
 
-    <!-- tools collapsed -->
+    <!-- tools -->
     <details style="margin-top: 2rem;">
         <summary style="font-size:1.3rem; color:#b0f0ff;">⚙️ Tools & DevOps</summary>
         <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin:1rem 0;">
-            <span class="info-badge">Git</span><span class="info-badge">GitHub</span><span class="info-badge">VSCode</span><span class="info-badge">Postman</span>
-            <span class="info-badge">Linux</span><span class="info-badge">Docker</span><span class="info-badge">K8s (learning)</span>
+            <span class="info-badge"><i class="fab fa-git-alt"></i> Git</span>
+            <span class="info-badge"><i class="fab fa-github"></i> GitHub</span>
+            <span class="info-badge"><i class="fas fa-code"></i> VSCode</span>
+            <span class="info-badge"><i class="fas fa-network-wired"></i> Postman</span>
+            <span class="info-badge"><i class="fab fa-linux"></i> Linux</span>
+            <span class="info-badge"><i class="fab fa-docker"></i> Docker</span>
         </div>
     </details>
 
@@ -337,11 +390,11 @@
     <div align="center">
         <h2><i class="fas fa-chart-line"></i> GitHub Statistics</h2>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.8rem;">
-            <img height="160" src="https://github-readme-stats.vercel.app/api?username=echuwa&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=8892b0" />
-            <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=echuwa&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=8892b0&langs_count=8" />
+            <img height="160" src="https://github-readme-stats.vercel.app/api?username=echuwa&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=00d4ff&text_color=8892b0" alt="GitHub Stats" />
+            <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=echuwa&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=8892b0&langs_count=8" alt="Top Languages" />
         </div>
         <div style="margin-top: 1rem;">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=echuwa&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d4ff&ring=00d4ff&fire=ff6b35&currStreakLabel=00d4ff&sideLabels=8892b0&dates=8892b0" />
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=echuwa&theme=tokyonight&hide_border=true&background=0d1117&stroke=00d4ff&ring=00d4ff&fire=ff6b35&currStreakLabel=00d4ff&sideLabels=8892b0&dates=8892b0" alt="GitHub Streak" />
         </div>
     </div>
 
@@ -350,67 +403,93 @@
     <div align="center">
         <h2><i class="fas fa-code-branch"></i> Featured Projects</h2>
         <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-            <!-- simulated pinned repos -->
-            <div class="repo-pin" style="padding: 1.2rem; width:280px;">
-                <i class="fas fa-bookmark" style="color:#00d4ff;"></i> <strong style="font-size:1.2rem;">Hostel-Management-Syste-Updated-Code</strong>
-                <p style="color:#9bb8da;">Updated hostel system with Laravel</p>
-            </div>
-            <div class="repo-pin" style="padding: 1.2rem; width:280px;">
+            <a href="https://github.com/echuwa/Hostel-Management-Syste-Updated-Code" target="_blank" class="repo-pin">
+                <i class="fas fa-bookmark" style="color:#00d4ff;"></i> <strong style="font-size:1.2rem;">Hostel-Management</strong>
+                <p style="color:#9bb8da; margin-top:0.5rem;">Updated hostel system with Laravel</p>
+            </a>
+            <a href="https://github.com/echuwa/Hostel" target="_blank" class="repo-pin">
                 <i class="fas fa-bookmark" style="color:#00d4ff;"></i> <strong style="font-size:1.2rem;">Hostel</strong>
                 <p style="color:#9bb8da;">Vue + Laravel dormitory app</p>
-            </div>
-            <div class="repo-pin" style="padding: 1.2rem; width:280px;">
+            </a>
+            <a href="https://github.com/echuwa/Java_framework" target="_blank" class="repo-pin">
                 <i class="fas fa-bookmark" style="color:#00d4ff;"></i> <strong style="font-size:1.2rem;">Java_framework</strong>
                 <p style="color:#9bb8da;">Custom spring-like experiment</p>
-            </div>
-            <div class="repo-pin" style="padding: 1.2rem; width:280px;">
+            </a>
+            <a href="https://github.com/echuwa/ethay" target="_blank" class="repo-pin">
                 <i class="fas fa-bookmark" style="color:#00d4ff;"></i> <strong style="font-size:1.2rem;">ethay</strong>
                 <p style="color:#9bb8da;">Network monitoring tool</p>
-            </div>
+            </a>
         </div>
     </div>
 
-    <!-- contribution graph placeholder (simulated) -->
+    <!-- contribution graph placeholder -->
     <div class="section-divider"></div>
     <div align="center">
         <h2><i class="fas fa-chart-area"></i> Contribution Graph</h2>
         <div style="width:100%; height:110px; background: linear-gradient(90deg, #0d1a24 0%, #00d4ff40 30%, #ff6b3540 70%, #0d1a24 100%); border-radius: 60px;"></div>
-        <p style="color:#587e9c;"><i>github-readme-activity-graph (tokyo-night theme)</i></p>
     </div>
 
-    <!-- trophies simplified -->
+    <!-- trophies -->
     <div align="center" style="margin: 2rem 0;">
         <h2><i class="fas fa-trophy"></i> Trophies</h2>
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.4rem;">
-            <span class="info-badge">🏆 GitHub Star</span><span class="info-badge">🏆 Laravel Contributor</span><span class="info-badge">🏆 Network+</span><span class="info-badge">🏆 5x Hackathon</span>
+            <span class="info-badge">🏆 GitHub Star</span>
+            <span class="info-badge">🏆 Laravel Contributor</span>
+            <span class="info-badge">🏆 Network+ Certified</span>
+            <span class="info-badge">🏆 5x Hackathon</span>
         </div>
     </div>
 
-    <!-- connect section -->
+    <!-- ========= CONNECT SECTION - ALL BUTTONS FIXED ========= -->
     <div class="section-divider"></div>
     <div align="center">
         <h2><i class="fas fa-handshake"></i> Let's Connect</h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
-            <a href="mailto:emmanuelchuwa243@gmail.com" class="info-badge"><i class="fas fa-envelope"></i> Gmail</a>
-            <a href="https://github.com/echuwa" class="info-badge"><i class="fab fa-github"></i> GitHub/echuwa</a>
-            <a href="#" class="info-badge"><i class="fab fa-linkedin"></i> LinkedIn (Emmanuel Chuwa)</a>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 2rem 0;">
+            <!-- Gmail Button - FIXED -->
+            <a href="mailto:emmanuelchuwa243@gmail.com" target="_blank" class="info-badge" style="background: rgba(209, 72, 54, 0.15); border-color: #D14836;">
+                <i class="fas fa-envelope" style="color: #D14836;"></i> emmanuelchuwa243@gmail.com
+            </a>
+            
+            <!-- GitHub Button - FIXED -->
+            <a href="https://github.com/echuwa" target="_blank" class="info-badge" style="background: rgba(24, 23, 23, 0.4); border-color: #6e5494;">
+                <i class="fab fa-github" style="color: #fff;"></i> github.com/echuwa
+            </a>
+            
+            <!-- LinkedIn Button - FIXED (using # as placeholder - replace with actual URL) -->
+            <a href="https://linkedin.com/in/echuwa" target="_blank" class="info-badge" style="background: rgba(0, 119, 181, 0.15); border-color: #0077B5;">
+                <i class="fab fa-linkedin" style="color: #0077B5;"></i> Emmanuel Chuwa
+            </a>
+            
+            <!-- Twitter/X Button - optional added -->
+            <a href="https://twitter.com/echuwa" target="_blank" class="info-badge" style="background: rgba(29, 161, 242, 0.15); border-color: #1DA1F2;">
+                <i class="fab fa-twitter" style="color: #1DA1F2;"></i> @echuwa
+            </a>
+        </div>
+        
+        <!-- Additional contact badges -->
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1rem;">
+            <a href="https://wa.me/255123456789" target="_blank" class="info-badge" style="background: rgba(37, 211, 102, 0.15); border-color: #25D366;">
+                <i class="fab fa-whatsapp" style="color: #25D366;"></i> WhatsApp
+            </a>
+            <a href="https://t.me/echuwa" target="_blank" class="info-badge" style="background: rgba(0, 136, 204, 0.15); border-color: #0088cc;">
+                <i class="fab fa-telegram" style="color: #0088cc;"></i> Telegram
+            </a>
         </div>
     </div>
 
-    <!-- snake animation placeholder (text graphic) -->
+    <!-- snake animation -->
     <div align="center" style="margin: 2.5rem 0 1rem;">
         <picture>
-            <img alt="github-snake" src="https://raw.githubusercontent.com/echuwa/echuwa/output/github-contribution-grid-snake-dark.svg" style="max-width:100%; border-radius: 30px; background:#0b141e; padding: 0.8rem;" />
+            <img alt="github-snake" src="https://raw.githubusercontent.com/echuwa/echuwa/output/github-contribution-grid-snake-dark.svg" style="max-width:100%; border-radius: 30px; background:#0b141e; padding: 0.8rem;" onerror="this.style.display='none'">
         </picture>
-        <p style="margin-top:0.5rem; color:#5c7f99;"><i>snake contribution animation</i></p>
     </div>
 
     <div align="center" style="margin: 1.5rem 0;">
         <i style="color:#b0e0ff;">⚡ "The best code is the code that solves real problems elegantly." — Emmanuel Chuwa</i>
     </div>
 
-    <!-- footer wave gradient -->
-    <div style="width:100%; height:120px; background: linear-gradient(90deg, #00d4ff, #1a6b8a, #0d1117); border-radius: 80px 80px 0 0; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.7rem; font-weight: 400; text-shadow: 0 2px 6px black;">
+    <!-- footer wave -->
+    <div class="footer-wave">
         Thanks for visiting! 🚀
     </div>
 
