@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #0a0c10;  /* IMEKUWA #0a0c10 sio nyekundu */
+            background-color: #0a0c10;  /* IMEKUWA #0a0c10 - dark blue, sio nyekundu */
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             color: #e1e9f0;
             line-height: 1.5;
@@ -58,6 +58,7 @@
             filter: drop-shadow(0 0 6px #00d4ff66);
         }
 
+        /* info badge style */
         .info-badge {
             display: inline-flex;
             align-items: center;
@@ -78,6 +79,7 @@
             cursor: pointer;
         }
 
+        /* 🔵 FIXED: HII NDIO ILIVYOKUWA IMEKOSEKANA */
         .info-badge i {
             color: #00d4ff;
             font-size: 1.2rem;
@@ -92,10 +94,7 @@
             box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
         }
 
-        .social-link {
-            text-decoration: none;
-        }
-
+        /* skill bars */
         .skill-bar-row {
             display: flex;
             align-items: center;
@@ -124,6 +123,7 @@
             box-shadow: 0 0 8px #00d4ff;
         }
 
+        /* network box */
         .net-box {
             background: #0b121b;
             border: 1px solid #2a4a5a;
@@ -150,6 +150,7 @@
             color: #bfd9f0;
         }
 
+        /* repo cards */
         .repo-pin {
             background: #111b24;
             border-radius: 2rem;
@@ -169,12 +170,14 @@
             box-shadow: 0 12px 24px -8px #00d4ff40;
         }
 
+        /* section divider */
         .section-divider {
             margin: 3rem 0 1.5rem;
             height: 2px;
             background: linear-gradient(90deg, transparent, #00d4ff40, #a0d4ff80, #00d4ff40, transparent);
         }
 
+        /* header wave */
         .wave-header {
             width: 100%;
             background: linear-gradient(115deg, #0d1117 0%, #0a3d62 30%, #1a6b8a 70%, #00d4ff 100%);
