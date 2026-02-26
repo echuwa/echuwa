@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: #0a0c10;  /* FIXED: was #8a0c10 (dark red) */
+            background-color: #0a0c10;  /* IMEKUWA #0a0c10 sio nyekundu */
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             color: #e1e9f0;
             line-height: 1.5;
@@ -58,7 +58,6 @@
             filter: drop-shadow(0 0 6px #00d4ff66);
         }
 
-        /* badge style - clean glass */
         .info-badge {
             display: inline-flex;
             align-items: center;
@@ -79,7 +78,7 @@
             cursor: pointer;
         }
 
-        .info-badge i, .info-badge .emoji {
+        .info-badge i {
             color: #00d4ff;
             font-size: 1.2rem;
             width: 1.6rem;
@@ -93,23 +92,23 @@
             box-shadow: 0 8px 20px rgba(0, 212, 255, 0.3);
         }
 
-        /* clickable badges for social links */
         .social-link {
             text-decoration: none;
         }
 
-        /* skill bars */
         .skill-bar-row {
             display: flex;
             align-items: center;
             gap: 1rem;
             margin: 1rem 0;
         }
+        
         .skill-tag {
             min-width: 120px;
             font-weight: 600;
             color: #b0d4ff;
         }
+        
         .bar-bg {
             flex: 1;
             height: 10px;
@@ -117,6 +116,7 @@
             border-radius: 20px;
             overflow: hidden;
         }
+        
         .bar-fill {
             height: 100%;
             background: linear-gradient(90deg, #00d4ff, #4a9eff);
@@ -124,7 +124,6 @@
             box-shadow: 0 0 8px #00d4ff;
         }
 
-        /* network block terminal style */
         .net-box {
             background: #0b121b;
             border: 1px solid #2a4a5a;
@@ -151,7 +150,6 @@
             color: #bfd9f0;
         }
 
-        /* repo cards */
         .repo-pin {
             background: #111b24;
             border-radius: 2rem;
@@ -163,6 +161,7 @@
             color: inherit;
             display: inline-block;
         }
+        
         .repo-pin:hover {
             border-color: #00d4ff;
             background: #14222e;
@@ -170,14 +169,12 @@
             box-shadow: 0 12px 24px -8px #00d4ff40;
         }
 
-        /* section divider */
         .section-divider {
             margin: 3rem 0 1.5rem;
             height: 2px;
             background: linear-gradient(90deg, transparent, #00d4ff40, #a0d4ff80, #00d4ff40, transparent);
         }
 
-        /* header wave */
         .wave-header {
             width: 100%;
             background: linear-gradient(115deg, #0d1117 0%, #0a3d62 30%, #1a6b8a 70%, #00d4ff 100%);
@@ -205,7 +202,6 @@
             margin: 0.5rem 0;
         }
 
-        /* footer wave */
         .footer-wave {
             width: 100%;
             height: 120px;
@@ -225,12 +221,6 @@
             text-decoration: none;
             color: inherit;
         }
-
-        /* profile views stat */
-        .stat-badge {
-            background: rgba(0, 212, 255, 0.1);
-            border: 1px solid #00d4ff40;
-        }
     </style>
 </head>
 <body>
@@ -244,7 +234,7 @@
             <div style="font-size: 1.3rem; background: rgba(0,0,0,0.3); backdrop-filter: blur(4px); padding: 0.3rem 2rem; border-radius: 60px; color: #fff; font-weight: 500; border: 1px solid #ffffff40;">⚡ Full-Stack Developer | Network Engineer ⚡</div>
         </div>
 
-        <!-- typing SVG simulation -->
+        <!-- typing simulation -->
         <a href="https://github.com/echuwa" target="_blank">
             <div class="typing-sim">
                 <span>🐘 PHP & Laravel · ☕ Spring Boot · 💚 Vue.js · 🔌 Networks</span>
@@ -252,13 +242,13 @@
         </a>
         <br/>
 
-        <!-- badges row with fixed links -->
+        <!-- badges row -->
         <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7rem; margin: 1.5rem 0 0.8rem;">
             <span class="info-badge"><i class="fas fa-map-pin"></i> 🌍 Tanzania</span>
             <span class="info-badge"><i class="fas fa-briefcase"></i> 💼 Open to Work</span>
             <span class="info-badge"><i class="fas fa-bolt"></i> ⚡ Code & Networks</span>
-            <span class="info-badge stat-badge"><i class="fas fa-eye"></i> 👁️ Profile Views 1.4k</span>
-            <span class="info-badge stat-badge"><i class="fas fa-users"></i> 👥 Followers 187</span>
+            <span class="info-badge"><i class="fas fa-eye"></i> 👁️ Profile Views 1.4k</span>
+            <span class="info-badge"><i class="fas fa-users"></i> 👥 Followers 187</span>
         </div>
     </div>
 
@@ -422,7 +412,7 @@
         </div>
     </div>
 
-    <!-- contribution graph placeholder -->
+    <!-- contribution graph -->
     <div class="section-divider"></div>
     <div align="center">
         <h2><i class="fas fa-chart-area"></i> Contribution Graph</h2>
@@ -440,33 +430,32 @@
         </div>
     </div>
 
-    <!-- ========= CONNECT SECTION - ALL BUTTONS FIXED ========= -->
+    <!-- ========= CONNECT SECTION ========= -->
     <div class="section-divider"></div>
     <div align="center">
         <h2><i class="fas fa-handshake"></i> Let's Connect</h2>
         <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 2rem 0;">
-            <!-- Gmail Button - FIXED -->
+            <!-- Gmail Button -->
             <a href="mailto:emmanuelchuwa243@gmail.com" target="_blank" class="info-badge" style="background: rgba(209, 72, 54, 0.15); border-color: #D14836;">
                 <i class="fas fa-envelope" style="color: #D14836;"></i> emmanuelchuwa243@gmail.com
             </a>
             
-            <!-- GitHub Button - FIXED -->
+            <!-- GitHub Button -->
             <a href="https://github.com/echuwa" target="_blank" class="info-badge" style="background: rgba(24, 23, 23, 0.4); border-color: #6e5494;">
                 <i class="fab fa-github" style="color: #fff;"></i> github.com/echuwa
             </a>
             
-            <!-- LinkedIn Button - FIXED (using # as placeholder - replace with actual URL) -->
+            <!-- LinkedIn Button -->
             <a href="https://linkedin.com/in/echuwa" target="_blank" class="info-badge" style="background: rgba(0, 119, 181, 0.15); border-color: #0077B5;">
                 <i class="fab fa-linkedin" style="color: #0077B5;"></i> Emmanuel Chuwa
             </a>
             
-            <!-- Twitter/X Button - optional added -->
+            <!-- Twitter Button -->
             <a href="https://twitter.com/echuwa" target="_blank" class="info-badge" style="background: rgba(29, 161, 242, 0.15); border-color: #1DA1F2;">
                 <i class="fab fa-twitter" style="color: #1DA1F2;"></i> @echuwa
             </a>
         </div>
         
-        <!-- Additional contact badges -->
         <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 1rem;">
             <a href="https://wa.me/255123456789" target="_blank" class="info-badge" style="background: rgba(37, 211, 102, 0.15); border-color: #25D366;">
                 <i class="fab fa-whatsapp" style="color: #25D366;"></i> WhatsApp
