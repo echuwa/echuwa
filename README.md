@@ -31,56 +31,54 @@
   </h2>
 </div>
 
-```php
-<?php
+<div align="center">
 
-namespace Echuwa\Developer;
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50%" valign="top">
 
-class Emmanuel extends FullStackEngineer implements NetworkExpert
-{
-    public string  $name     = "Emmanuel Chuwa";
-    public string  $alias    = "echuwa";
-    public string  $location = "🌍 Tanzania";
-    public string  $email    = "emmanuelchuwa243@gmail.com";
-    public string  $github   = "github.com/echuwa";
+### 👨‍💻 Personal Info
 
-    /** @var array Backend Mastery */
-    public array $backend = [
-        "PHP"         => "⭐⭐⭐⭐⭐",
-        "Laravel"     => "⭐⭐⭐⭐⭐",
-        "Spring Boot" => "⭐⭐⭐⭐☆",
-        "Java"        => "⭐⭐⭐⭐☆",
-    ];
+<img src="https://img.shields.io/badge/👤_Name-Emmanuel_Chuwa-00d4ff?style=for-the-badge&labelColor=0d1117"/>
 
-    /** @var array Frontend Mastery */
-    public array $frontend = [
-        "Vue.js"      => "⭐⭐⭐⭐⭐",
-        "JavaScript"  => "⭐⭐⭐⭐⭐",
-        "HTML5/CSS3"  => "⭐⭐⭐⭐☆",
-    ];
+<img src="https://img.shields.io/badge/🎭_Alias-Mr.chmod_/_echuwa-8892b0?style=for-the-badge&labelColor=0d1117"/>
 
-    /** @var array Database Mastery */
-    public array $databases = [
-        "MySQL"       => "⭐⭐⭐⭐⭐",
-        "MongoDB"     => "⭐⭐⭐⭐☆",
-        "PgAdmin4"    => "⭐⭐⭐⭐☆",  // PostgreSQL GUI Expert
-    ];
+<img src="https://img.shields.io/badge/🌍_Location-Dar_es_Salaam,_Tanzania-00ff88?style=for-the-badge&labelColor=0d1117"/>
 
-    /** @var array Networking Skills */
-    public array $networking = [
-        "Routing & Switching", "VLAN Configuration",
-        "Firewall Setup",      "Network Security",
-        "DNS & DHCP",          "VPN Configuration",
-        "Wireless Networks",   "Network Monitoring",
-    ];
+<img src="https://img.shields.io/badge/📧_Email-emmanuelchuwa243@gmail.com-D14836?style=for-the-badge&labelColor=0d1117"/>
 
-    public function currentlyLearning(): array {
-        return ["Docker 🐳", "Kubernetes ☸️", "AWS Cloud ☁️", "DevOps 🔄"];
-    }
+<img src="https://img.shields.io/badge/🐙_GitHub-github.com/echuwa-181717?style=for-the-badge&labelColor=0d1117"/>
 
-    public string $motto = "💡 Clean code today → Scalable systems tomorrow!";
-}
-```
+<img src="https://img.shields.io/badge/💼_Role-Full--Stack_Developer-ff6b35?style=for-the-badge&labelColor=0d1117"/>
+
+<img src="https://img.shields.io/badge/🔌_Also-Network_Engineer-1BA0D7?style=for-the-badge&labelColor=0d1117"/>
+
+</td>
+<td width="50%" valign="top">
+
+### 🚀 Currently
+
+<img src="https://img.shields.io/badge/🔥_Working_On-Laravel_&_Vue.js_Projects-FF2D20?style=for-the-badge&labelColor=0d1117"/>
+
+<img src="https://img.shields.io/badge/📚_Learning-Docker_🐳-2496ED?style=for-the-badge&labelColor=0d1117"/>
+
+<img src="https://img.shields.io/badge/📚_Learning-Kubernetes_☸️-326CE5?style=for-the-badge&labelColor=0d1117"/>
+
+<img src="https://img.shields.io/badge/📚_Learning-AWS_Cloud_☁️-FF9900?style=for-the-badge&labelColor=0d1117"/>
+
+<img src="https://img.shields.io/badge/📚_Learning-DevOps_🔄-00d4ff?style=for-the-badge&labelColor=0d1117"/>
+
+<img src="https://img.shields.io/badge/💬_Ask_Me_About-PHP,_Laravel,_Networks-4FC08D?style=for-the-badge&labelColor=0d1117"/>
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+> 💡 *"Clean code today → Scalable systems tomorrow!"* — **Emmanuel Chuwa**
+
+</div>
 
 ---
 
