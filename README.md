@@ -5,6 +5,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=500&lines=Emmanuel+G.+Chuwa;Full-Stack+Developer;Network+Engineer;Edge+AI+%7C+Building+for+Africa+%F0%9F%8C%8D" alt="typing" />
 
 <p align="center">
+  <a href="https://echuwa.github.io"><img src="https://img.shields.io/badge/Portfolio-58A6FF?style=for-the-badge&logo=googlechrome&logoColor=white"/></a>
   <a href="mailto:emmanuelchuwa243@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
   <a href="https://linkedin.com/in/emmanuelchuwa"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
   <a href="https://github.com/echuwa"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
@@ -19,12 +20,19 @@
 ```yaml
 name        : Emmanuel G. Chuwa
 alias       : Mr.chmod
-location    : Dodoma, Tanzania 🇹🇿
+location    : Dsm, Tanzania 🇹🇿
 education   : BSc Software Engineering — University of Dodoma (UDOM)
 status      : Final year · Open to internships & graduate roles
+portfolio   : echuwa.github.io
 focus       : Full-Stack Development · Networking · Edge AI Inference
 exploring   : ONNX Runtime · TensorFlow Lite · System Design
 ```
+
+<div align="center">
+
+**🔗 See full case studies, project write-ups, and CV → [echuwa.github.io](https://echuwa.github.io)**
+
+</div>
 
 ---
 
@@ -118,7 +126,7 @@ Centralised SSO integrating 4 UDOM subsystems — Student Records, IPT, LMS, E-C
 
 **[🏫 john-merlin-sms](https://github.com/echuwa)**
 
-Full-stack school management system — student records, academic reports, staff management.
+Full-stack school management system — student records, academic reports, staff management. **Live in production.**
 
 `Vue.js 3` `Django` `MySQL` `REST API`
 
@@ -143,6 +151,12 @@ Android app — gallery image classification using MobileNetV2 + TensorFlow Lite
 </tr>
 </table>
 
+<div align="center">
+
+**📁 More projects — including 2Jem Apartments (Django + REST API) — on my [portfolio](https://echuwa.github.io)**
+
+</div>
+
 ---
 
 ### 📊 Stats
@@ -160,6 +174,12 @@ Android app — gallery image classification using MobileNetV2 + TensorFlow Lite
 
 </div>
 
+<div align="center">
+
+![snake](https://raw.githubusercontent.com/echuwa/echuwa/output/github-contribution-grid-snake-dark.svg)
+
+</div>
+
 ---
 
 ### 🌍 Building for Africa
@@ -173,6 +193,16 @@ Android app — gallery image classification using MobileNetV2 + TensorFlow Lite
 
 ---
 
+### 📬 Let's build something
+
 <div align="center">
+
+<a href="https://echuwa.github.io">Portfolio</a> ·
+<a href="mailto:emmanuelchuwa243@gmail.com">Email</a> ·
+<a href="https://linkedin.com/in/emmanuelchuwa">LinkedIn</a>
+
 <sub><i>"Code is how I solve problems. Tanzania is where I solve them."</i></sub>
+
 </div>
+
+![footer](https://capsule-render.vercel.app/api?type=rect&color=0d1117&height=2&section=footer)
